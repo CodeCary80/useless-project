@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're Late for Class!</title>
+    <link rel="stylesheet" href="/style.css">;
+
+    <audio id="moveSound" src="sound/move.wav" preload="auto"></audio>
+    <audio id="caughtSound" src="sound/caught.wav" preload="auto"></audio>
+    <audio id="winSound" src="sound/win.wav" preload="auto"></audio>
+    <audio id="bgMusic" src="sound/lecture.mp3" preload="auto" loop></audio>
+    
+</head>
+<body>
+    <h1>Embarrassment Points: <span id="score">0</span></h1>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="startScreen" class="start-screen">
+            <h2>You're Late for Class!</h2>
+            <p>Oh no! You're late again and need to find your seat without disturbing the class.</p>
+            <p>Use the arrow keys to navigate between the desks.</p>
+            <p>Find your randomly assigned seat quickly to minimize embarrassment!</p>
+            <button class="start-button" onclick="startGame()">Press to Begin</button>
+        </div>
+        <div id="eventAlert" class="event-alert"></div>
+    </div>
+    <div class="instructions">
+        Use arrow keys to move. Find your randomly assigned seat without bumping into others!
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
